@@ -2,9 +2,7 @@ const form = document.getElementById('userForm');
     const userInfo = document.getElementById('userInfo');
     const displayName = document.getElementById('displayName');
     const displayScore = document.getElementById('displayScore');
-    const score = document.getElementById('score');
     let grade;
-    
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       const name = document.getElementById('name').value;
@@ -21,7 +19,7 @@ const form = document.getElementById('userForm');
         grade = 'E. You passed 🎉 the test';
     }
     else{
-        grade = 'F. You failed 😢 the test';
+        grade = '"F". You failed 😢 the test';
     }
       displayName.textContent = name;
       displayScore.textContent = grade;
